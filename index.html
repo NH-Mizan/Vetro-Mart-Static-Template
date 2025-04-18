@@ -2,36 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VetroMart                                                                               </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VetroMart</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
-<body>
-    <!-- Header Section -->
+<body class="bg-white text-gray-800">
+  <!-- Header Section -->
+  <header class="bg-black text-white">
+    <nav class="w-11/12 mx-auto px-4 py-4 grid grid-cols-1 md:grid-cols-4 items-center gap-4">
+      
+      <!-- Logo -->
+      <div class="flex items-center justify-between md:justify-start col-span-1">
+        <img src="images/1721131556-bhive.webp" alt="Logo" class="w-28 md:w-32" />
 
-    <!-- Header Section End -->
-    <!-- Main Section -->
+        <!-- Mobile Menu Toggle -->
+        <button class="md:hidden text-white text-2xl">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
 
-        <!-- Banner Section -->
+      <!-- Search Bar -->
+      <div class="w-full col-span-1 md:col-span-2 relative">
+        <form class="flex items-center">
+          <input type="text" placeholder="Search Product..." class="w-full h-10 px-4 rounded-full text-black outline-none" />
+          <button type="submit" class="absolute right-2 text-black bg-yellow-400 px-4 py-1 rounded-full">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
 
-
-        <!-- Category Section -->
-         <!-- Hot Deal Section -->
-          <!-- Discount Section -->
-           <!-- Brands Section -->
-            <!-- Mens Pants section -->
-            <!-- Mens Drop Shoulder T-shirt section -->
-            <!-- Hoddie section -->
-            <!-- Just For You section -->
-
-
-    <!-- Main Section End -->
-    <!-- Footer Section  -->
-
-
-    <!-- Footer Section End -->
+      <!-- Icons / Menu -->
+      <div class="flex items-center justify-end gap-4 text-sm col-span-1">
+        <a href="#" class="hover:text-yellow-400 flex items-center gap-1">
+          <i class="fas fa-truck"></i>
+          <span>Track Order</span>
+        </a>
+        <a href="#" class="hover:text-yellow-400 flex items-center gap-1">
+          <i class="fas fa-user"></i>
+          <span>Login / Sign Up</span>
+        </a>
+        <a href="#" class="relative hover:text-yellow-400">
+          <i class="fas fa-heart"></i>
+          <span class="absolute -top-2 -right-2 bg-yellow-400 text-black text-xs px-1 rounded-full">0</span>
+        </a>
+        <a href="#" class="relative hover:text-yellow-400">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="absolute -top-2 -right-2 bg-yellow-400 text-black text-xs px-1 rounded-full">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <!-- Header Section End -->
 </body>
 
 </html>
-<!-- html Css javaScript Tailwind Css And Components Library -->

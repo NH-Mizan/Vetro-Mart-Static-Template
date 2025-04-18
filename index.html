@@ -2,94 +2,133 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VetroMart</title>
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VetroMart</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- JQuery CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
 
 <body class="bg-white text-gray-800">
-  <!-- Header Section -->
-  <header class="bg-black text-white">
-    <nav class="w-11/12 mx-auto px-2 lg:px-4 py-4 grid grid-cols-1 md:grid-cols-4 items-center gap-4">
-      
-      <!-- Logo -->
-      <div class="flex items-center justify-between md:justify-start 
+    <!-- Header Section -->
+    <header class="bg-black text-white">
+        <nav class="w-11/12 mx-auto px-2 lg:px-4 py-4 grid grid-cols-1 md:grid-cols-4 items-center gap-4">
+
+            <!-- Logo -->
+            <div class="flex items-center justify-between md:justify-start 
       col-span-1">
-       <!-- Mobile Menu Toggle -->
-       <button class="md:hidden text-white text-2xl">
-        <i class="fas fa-bars"></i>
-      </button>
-        <img src="images/1721131556-bhive.webp" alt="Logo" class="w-28 md:w-32" />
+                <!-- Mobile Menu Toggle -->
+                <button class="md:hidden text-white text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <img src="images/1721131556-bhive.webp" alt="Logo" class="w-28 md:w-32" />
 
-       
 
-        <div class="lg:hidden md:hidden flex  gap-4">
-            <a href="#" class="hover:text-yellow-400 flex items-center gap-1">
-                <i class="fas fa-user"></i>
-              </a>
-              <a href="#" class="relative hover:text-yellow-400">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="absolute -top-2 -right-2 bg-yellow-400 text-black text-xs px-1 rounded-full">0</span>
-              </a>
+
+                <div class="lg:hidden md:hidden flex  gap-4">
+                    <a href="#" class="hover:text-yellow-400 flex items-center gap-1">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="#" class="relative hover:text-yellow-400">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span
+                            class="absolute -top-2 -right-2 bg-yellow-400 text-black text-xs px-1 rounded-full">0</span>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- Search Bar -->
+            <div class="w-full col-span-1 md:col-span-2 relative">
+                <form class="flex items-center">
+                    <input type="text" placeholder="Search Product..."
+                        class="w-full h-10 px-4 rounded-full text-black outline-none" />
+                    <button type="submit" class="absolute right-2 text-black bg-yellow-400 px-4 py-1 rounded-full">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Icons / Menu -->
+            <div class="hidden lg:flex  items-center justify-end gap-4 text-sm col-span-1">
+                <a href="#" class="hover:text-yellow-400 flex items-center gap-1">
+                    <i class="fas fa-truck"></i>
+                    <span>Track Order</span>
+                </a>
+                <a href="#" class="hover:text-yellow-400 flex items-center gap-1">
+                    <i class="fas fa-user"></i>
+                    <span>Login / Sign Up</span>
+                </a>
+                <a href="#" class="relative hover:text-yellow-400">
+                    <i class="fas fa-heart"></i>
+                    <span class="absolute -top-2 -right-2 bg-yellow-400 text-black text-xs px-1 rounded-full">0</span>
+                </a>
+                <a href="#" class="relative hover:text-yellow-400">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="absolute -top-2 -right-2 bg-yellow-400 text-black text-xs px-1 rounded-full">0</span>
+                </a>
+            </div>
+        </nav>
+        <!-- Categoris Section -->
+
+        <section class="bg-red-200 text-black font-bold ">
+            <div class="w-11/12 mx-auto px-4 py-4">
+                <ul class="flex  lg:gap-8  lg:text-lg  text-sm">
+                    <li><a href="#" class="lg:mr-12 hidden lg:block">
+
+                            <i class="fas fa-bars mr-2"></i>
+
+                            All Categoris</a></li>
+                    <li><a href="#"> Best Seller</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#"> Bhive Basics</a></li>
+                    <li><a href="#"> Livestrems</a></li>
+                </ul>
+            </div>
+
+        </section>
+    </header>
+    <!-- Header Section End -->
+    <!-- Main Section -->
+    <!-- Banner Section -->
+    <section class="mt-4">
+        <div class="w-11/12 mx-auto">
+          <div class="banner-slider">
+            <img src="images/banner1.jpg" alt="Banner 1" class="w-full h-[550px]  rounded-xl" />
+            <img src="images/banner2.jpg" alt="Banner 2" class="w-full h-[550px] rounded-xl" />
+            <img src="images/banner3.jpg" alt="Banner 3" class="w-full h-[550px]  rounded-xl" />
+          </div>
         </div>
-    
-      </div>
+      </section>
+      
 
 
-      <!-- Search Bar -->
-      <div class="w-full col-span-1 md:col-span-2 relative">
-        <form class="flex items-center">
-          <input type="text" placeholder="Search Product..." class="w-full h-10 px-4 rounded-full text-black outline-none" />
-          <button type="submit" class="absolute right-2 text-black bg-yellow-400 px-4 py-1 rounded-full">
-            <i class="fas fa-search"></i>
-          </button>
-        </form>
-      </div>
+    <!-- Category Section -->
+    <!-- Hot Deal Section -->
+    <!-- Discount Section -->
+    <!-- Brands Section -->
+    <!-- Mens Pants section -->
+    <!-- Mens Drop Shoulder T-shirt section -->
+    <!-- Hoddie section -->
+    <!-- Just For You section -->
 
-      <!-- Icons / Menu -->
-      <div class="hidden lg:flex  items-center justify-end gap-4 text-sm col-span-1">
-        <a href="#" class="hover:text-yellow-400 flex items-center gap-1">
-          <i class="fas fa-truck"></i>
-          <span>Track Order</span>
-        </a>
-        <a href="#" class="hover:text-yellow-400 flex items-center gap-1">
-          <i class="fas fa-user"></i>
-          <span>Login / Sign Up</span>
-        </a>
-        <a href="#" class="relative hover:text-yellow-400">
-          <i class="fas fa-heart"></i>
-          <span class="absolute -top-2 -right-2 bg-yellow-400 text-black text-xs px-1 rounded-full">0</span>
-        </a>
-        <a href="#" class="relative hover:text-yellow-400">
-          <i class="fas fa-shopping-cart"></i>
-          <span class="absolute -top-2 -right-2 bg-yellow-400 text-black text-xs px-1 rounded-full">0</span>
-        </a>
-      </div>
-    </nav>
-    <!-- Categoris Section -->
-    
-     <section class="bg-red-200 text-black font-bold ">
-        <div class="w-11/12 mx-auto px-4 py-4">
-            <ul class="flex  lg:gap-8  lg:text-lg  text-sm">
-                <li><a href="#" class="lg:mr-12 hidden lg:block">
-                 
-                        <i class="fas fa-bars mr-2"></i>
-                     
-                    All Categoris</a></li>
-                <li><a href="#"> Best Seller</a></li>
-                <li><a href="#">Deals</a></li>
-                <li><a href="#"> Bhive Basics</a></li>
-                <li><a href="#"> Livestrems</a></li>
-            </ul>
-        </div>
 
-     </section>
-  </header>
-  <!-- Header Section End -->
+    <!-- Main Section End -->
+    <!-- Footer Section  -->
+
+
+    <!-- Footer Section End -->
+  <!-- JQuery Banner Slide Plaging -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="Js/Script.js"></script>
 </body>
 
 </html>

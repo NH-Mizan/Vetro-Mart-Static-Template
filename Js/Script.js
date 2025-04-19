@@ -11,3 +11,9 @@
       slidesToScroll: 1
     });
   });
+
+
+  // toggole Bottun
+  const toggleBtn = () =>{
+    alert('Hello')
+  }
